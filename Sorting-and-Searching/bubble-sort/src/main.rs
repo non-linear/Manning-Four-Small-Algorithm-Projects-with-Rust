@@ -1,7 +1,6 @@
-mod prng;
-mod utils;
-
-use utils::{get_i32, make_random_vec, print_vec};
+use utilities::get_i32::get_i32;
+use utilities::make_random_vec::make_random_vec;
+use utilities::print_vec::print_vec;
 
 // Use bubble sort to sort the vector.
 fn bubble_sort(vec: &mut Vec<i32>) {
