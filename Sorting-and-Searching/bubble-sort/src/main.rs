@@ -1,3 +1,4 @@
+use utilities::check_sorted::check_sorted;
 use utilities::get_i32::get_i32;
 use utilities::make_random_vec::make_random_vec;
 use utilities::print_vec::print_vec;
@@ -15,20 +16,6 @@ fn bubble_sort(vec: &mut Vec<i32>) {
         }
         n = new_n;
     }
-}
-
-// Verify that the Vec is sorted.
-fn check_sorted(vec: &Vec<i32>) {
-    let mut minimum = i32::MIN;
-    for item in vec {
-        if item < &minimum {
-            println!("The vector is NOT sorted!");
-            return;
-        } else {
-            minimum = *item;
-        }
-    }
-    print!("The vector is sorted!");
 }
 
 fn main() {
