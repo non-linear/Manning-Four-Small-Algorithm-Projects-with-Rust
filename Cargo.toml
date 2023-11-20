@@ -8,4 +8,5 @@ members = [
     "Sorting-and-Searching/binary-search",
     "Sorting-and-Searching/quicksort",
     "Sorting-and-Searching/utilities",
+    "Problem-Solving-with-Recursion/factorial",
 ]
