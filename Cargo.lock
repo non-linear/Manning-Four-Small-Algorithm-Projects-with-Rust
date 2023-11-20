@@ -17,6 +17,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "linear-search"
+version = "0.1.0"
+dependencies = [
+ "utilities",
+]
+
+[[package]]
 name = "quicksort"
 version = "0.1.0"
 dependencies = [
