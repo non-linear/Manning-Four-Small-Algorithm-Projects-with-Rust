@@ -28,6 +28,13 @@ name = "factorial"
 version = "0.1.0"
 
 [[package]]
+name = "fibonacci"
+version = "0.1.0"
+dependencies = [
+ "utilities",
+]
+
+[[package]]
 name = "linear-search"
 version = "0.1.0"
 dependencies = [
