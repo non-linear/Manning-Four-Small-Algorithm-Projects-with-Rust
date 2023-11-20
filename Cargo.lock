@@ -24,6 +24,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "dynamic-fibonacci"
+version = "0.1.0"
+dependencies = [
+ "utilities",
+]
+
+[[package]]
 name = "factorial"
 version = "0.1.0"
 
