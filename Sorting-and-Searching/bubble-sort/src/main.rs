@@ -23,8 +23,8 @@ fn main() {
     let max = get_i32("Please specify maximum: ");
 
     let mut random_vec = make_random_vec(num_items, max);
-    print_vec(&random_vec, num_items);
+    print_vec(&random_vec, num_items as usize);
     bubble_sort(&mut random_vec);
-    print_vec(&random_vec, num_items);
+    print_vec(&random_vec, num_items as usize);
     check_sorted(&random_vec);
 }

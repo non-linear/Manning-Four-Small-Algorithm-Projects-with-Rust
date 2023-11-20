@@ -3,6 +3,7 @@ resolver = "2"
 
 members = [
     "Sorting-and-Searching/bubble-sort",
+    "Sorting-and-Searching/counting-sort",
     "Sorting-and-Searching/quicksort",
     "Sorting-and-Searching/utilities",
 ]

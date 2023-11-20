@@ -10,6 +10,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "counting-sort"
+version = "0.1.0"
+dependencies = [
+ "utilities",
+]
+
+[[package]]
 name = "quicksort"
 version = "0.1.0"
 dependencies = [

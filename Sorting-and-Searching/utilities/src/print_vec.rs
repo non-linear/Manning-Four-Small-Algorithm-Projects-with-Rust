@@ -1,8 +1,10 @@
 // Print at most num_items items.
-pub fn print_vec(vec: &Vec<i32>, num_items: i32) {
+use std::fmt::Display;
+
+pub fn print_vec(vec: &Vec<impl Display>, num_items: usize) {
     let mut max = vec.len();
-    if max > num_items as usize {
-        max = num_items as usize;
+    if max > num_items {
+        max = num_items;
     }
 
     let mut string = String::new();
