@@ -5,6 +5,7 @@ members = [
     "Sorting-and-Searching/bubble-sort",
     "Sorting-and-Searching/counting-sort",
     "Sorting-and-Searching/linear-search",
+    "Sorting-and-Searching/binary-search",
     "Sorting-and-Searching/quicksort",
     "Sorting-and-Searching/utilities",
 ]
