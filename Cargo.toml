@@ -11,4 +11,5 @@ members = [
     "Problem-Solving-with-Recursion/factorial",
     "Problem-Solving-with-Recursion/fibonacci",
     "Problem-Solving-with-Recursion/dynamic-fibonacci",
+    "Problem-Solving-with-Recursion/knights-tour",
 ]
