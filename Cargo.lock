@@ -42,6 +42,10 @@ dependencies = [
 ]
 
 [[package]]
+name = "gcd-and-lcm"
+version = "0.1.0"
+
+[[package]]
 name = "knights-tour"
 version = "0.1.0"
 

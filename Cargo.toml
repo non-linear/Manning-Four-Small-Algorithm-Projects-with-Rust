@@ -15,4 +15,5 @@ members = [
     "Problem-Solving-with-Recursion/n-queens",
     "Problem-Solving-with-Recursion/n-queens-redux",
     "Problem-Solving-with-Recursion/tower-of-hanoi",
+    "Public-Key-Cryptography/gcd-and-lcm"
 ]
