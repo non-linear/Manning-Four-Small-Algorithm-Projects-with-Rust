@@ -44,9 +44,6 @@ dependencies = [
 [[package]]
 name = "knights-tour"
 version = "0.1.0"
-dependencies = [
- "utilities",
-]
 
 [[package]]
 name = "linear-search"
@@ -54,6 +51,10 @@ version = "0.1.0"
 dependencies = [
  "utilities",
 ]
+
+[[package]]
+name = "n-queens"
+version = "0.1.0"
 
 [[package]]
 name = "quicksort"

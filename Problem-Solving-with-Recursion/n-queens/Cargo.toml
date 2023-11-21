@@ -1,5 +1,5 @@
 [package]
-name = "knights-tour"
+name = "n-queens"
 version = "0.1.0"
 edition = "2021"
 
