@@ -14,4 +14,5 @@ members = [
     "Problem-Solving-with-Recursion/knights-tour",
     "Problem-Solving-with-Recursion/n-queens",
     "Problem-Solving-with-Recursion/n-queens-redux",
+    "Problem-Solving-with-Recursion/tower-of-hanoi",
 ]
