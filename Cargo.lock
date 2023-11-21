@@ -57,6 +57,10 @@ name = "n-queens"
 version = "0.1.0"
 
 [[package]]
+name = "n-queens-redux"
+version = "0.1.0"
+
+[[package]]
 name = "quicksort"
 version = "0.1.0"
 dependencies = [
