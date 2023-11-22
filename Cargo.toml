@@ -20,5 +20,6 @@ members = [
     "Public-Key-Cryptography/sieve-of-eratosthenes",
     "Public-Key-Cryptography/factoring-numbers",
     "Public-Key-Cryptography/primality-testing",
-    "Public-Key-Cryptography/rsa"
+    "Public-Key-Cryptography/rsa",
+    "Dynamic-Programming/exhaustive-search"
 ]

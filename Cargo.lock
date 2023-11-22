@@ -31,6 +31,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "exhaustive-search"
+version = "0.1.0"
+dependencies = [
+ "utilities",
+]
+
+[[package]]
 name = "factorial"
 version = "0.1.0"
 
