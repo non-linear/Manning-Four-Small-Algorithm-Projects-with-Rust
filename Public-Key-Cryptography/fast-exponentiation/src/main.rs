@@ -1,6 +1,5 @@
 use std::io::{self, Write};
 fn main() {
-    println!("Enter -1 to exit\n");
     loop {
         // Prompt the user for n.
         let num = get_i64("number: ");
