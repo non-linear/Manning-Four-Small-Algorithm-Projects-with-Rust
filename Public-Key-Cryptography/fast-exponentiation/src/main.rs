@@ -33,15 +33,6 @@ fn main() {
     }
 }
 
-// // Use fast exponentiation to calculate num ^ pow.
-// FastExponentation(num, pow)
-//     result = 1
-//     For pow > 0 {
-//         If pow mod 2 == 1 Then result *= num
-//         pow /= 2
-//         num *= num
-//     Return result
-
 // Perform fast exponentiation.
 fn fast_exp(mut num: i64, mut pow: i64) -> i64 {
     let mut result: i64 = 1;
@@ -61,12 +52,12 @@ fn fast_exp_mod(mut num: i64, mut pow: i64, modulus: i64) -> i64 {
     let mut result: i64 = 1;
     while pow > 0 {
         if pow % 2 == 1 {
-            result *= num % modulus;
+            result = (result * num) % modulus;
         }
         pow /= 2;
-        num *= num % modulus;
+        num = (num * num) % modulus;
     }
-    return result % modulus;
+    return result;
 }
 
 // Prompt the user for an i64.
