@@ -17,5 +17,6 @@ members = [
     "Problem-Solving-with-Recursion/tower-of-hanoi",
     "Public-Key-Cryptography/gcd-and-lcm",
     "Public-Key-Cryptography/fast-exponentiation",
-    "Public-Key-Cryptography/sieve-of-eratosthenes"
+    "Public-Key-Cryptography/sieve-of-eratosthenes",
+    "Public-Key-Cryptography/factoring-numbers"
 ]
