@@ -40,4 +40,11 @@ impl Prng {
         let result = min as f64 + range * self.next_f64();
         return result as i32;
     }
+
+    // Return a pseudorandom value in the range [min, max).
+    pub fn next_i64(&mut self, min: i64, max: i64) -> i64 {
+        let range = (max - min) as f64;
+        let result = min as f64 + range * self.next_f64();
+        return result as i64;
+    }
 }
