@@ -87,6 +87,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "rsa"
+version = "0.1.0"
+dependencies = [
+ "utilities",
+]
+
+[[package]]
 name = "sieve-of-eratosthenes"
 version = "0.1.0"
 
