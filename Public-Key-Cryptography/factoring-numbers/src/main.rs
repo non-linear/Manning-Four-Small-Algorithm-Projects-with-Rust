@@ -15,8 +15,8 @@ fn main() {
     println!();
 
     println!("Use the Euler's sieve to find the factors.");
+    let primes = sieve_to_primes(sieve_of_eratosthenes(100_000_000));
     let start2 = Instant::now();
-    let primes = sieve_to_primes(sieve_of_eratosthenes(1_000_000_000));
     let mut factors2 = find_factors_sieve(primes, num);
     let duration2 = start2.elapsed();
     println!("find_factors_sieve: {:?} seconds", duration2);
@@ -52,13 +52,16 @@ fn find_factors_sieve(primes: Vec<i64>, mut num: i64) -> Vec<i64> {
     let mut prime_idx: usize = 1;
     let mut prime = primes[prime_idx];
 
-    while num > 1 && prime <= num && prime_idx < primes.len() - 1 {
+    while num > 1 && prime * prime <= num && prime_idx < primes.len() - 1 {
         while num % prime == 0 {
             num /= prime;
             factors.push(prime);
         }
         prime_idx += 1;
         prime = primes[prime_idx];
+    }
+    if num > 1 {
+        factors.push(num);
     }
     return factors;
 }
