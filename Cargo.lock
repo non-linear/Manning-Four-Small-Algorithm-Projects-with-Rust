@@ -10,6 +10,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "branch-and-bound"
+version = "0.1.0"
+dependencies = [
+ "utilities",
+]
+
+[[package]]
 name = "bubble-sort"
 version = "0.1.0"
 dependencies = [
