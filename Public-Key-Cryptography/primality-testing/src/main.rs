@@ -43,12 +43,12 @@ fn fast_exp_mod(mut num: i64, mut pow: i64, modulus: i64) -> i64 {
     return result;
 }
 
-fn is_probably_prime(prng: &mut Prng, p: i32, num_tests: i64) -> bool {
+fn is_probably_prime(prng: &mut Prng, p: i64, num_tests: i64) -> bool {
     // Perform the tests.
     for _i in 0..num_tests {
-        let n: i32 = prng.next_i32(2, p);
+        let n = prng.next_i64(2, p);
 
-        if fast_exp_mod(n as i64, p as i64 - 1, p as i64) != 1 {
+        if fast_exp_mod(n, p - 1, p) != 1 {
             return false;
         }
     }
@@ -61,7 +61,7 @@ fn find_prime(prng: &mut Prng, min: i64, max: i64, num_tests: i64) -> i64 {
     // Try random numbers until we find a prime.
     loop {
         // Pick a random odd p.
-        let p = prng.next_i32(min as i32, max as i32 + 1);
+        let p = prng.next_i64(min, max + 1);
         if p % 2 == 0 {
             continue;
         }
