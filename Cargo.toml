@@ -22,5 +22,6 @@ members = [
     "Public-Key-Cryptography/primality-testing",
     "Public-Key-Cryptography/rsa",
     "Dynamic-Programming/exhaustive-search",
-    "Dynamic-Programming/branch-and-bound"
+    "Dynamic-Programming/branch-and-bound",
+    "Dynamic-Programming/dynamic-programming"
 ]

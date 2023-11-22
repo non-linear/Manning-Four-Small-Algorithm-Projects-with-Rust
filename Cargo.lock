@@ -38,6 +38,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "dynamic-programming"
+version = "0.1.0"
+dependencies = [
+ "utilities",
+]
+
+[[package]]
 name = "exhaustive-search"
 version = "0.1.0"
 dependencies = [
