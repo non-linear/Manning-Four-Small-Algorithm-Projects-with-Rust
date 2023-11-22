@@ -13,14 +13,17 @@ fn main() {
 // Build a sieve of Eratosthenes.
 fn sieve_of_eratosthenes(max: usize) -> Vec<bool> {
     let mut sieve: Vec<bool> = vec![true; max];
-    for candidate in 4..max {
-        if sieve[candidate] {
-            for test_divisor in 2..max {
-                if candidate % test_divisor == 0 && candidate / test_divisor > 1 {
-                    sieve[candidate] = false;
-                    break;
-                }
+    for factor in 3..max {
+        if !sieve[factor] {
+            continue;
+        }
+        for multiple in 2..max {
+            let candidate = factor * multiple;
+
+            if candidate >= max {
+                break;
             }
+            sieve[candidate] = false;
         }
     }
     return sieve;
