@@ -76,6 +76,10 @@ dependencies = [
 ]
 
 [[package]]
+name = "sieve-of-eratosthenes"
+version = "0.1.0"
+
+[[package]]
 name = "tower-of-hanoi"
 version = "0.1.0"
 
